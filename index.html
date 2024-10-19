@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======================= FAVICON ======================= -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- ======================= REMIXICONS ======================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!-- ======================= CSS ======================= -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ======================= TITLE ======================= -->
+    <title>SP-Book</title>
+</head>
+
+<body>
+    <!-- ======================= HEADER ======================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <!-- LOGO -->
+            <a href="#" class="nav__logo">
+                <i class="ri-book-3-line"></i> SP-Book
+            </a>
+
+            <!-- MENU -->
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-book-3-line"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link ">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Discount</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-bookmark-2-line"></i>
+                            <span>New Books</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="ri-message-3-line"></i>
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Nav actions -->
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+
+                <!-- login -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+
+                <!-- Theme button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======================= SEARCH ======================= -->
+    <div class="search" id="search-content">
+        <!-- form -->
+        <form action="" class="search__form">
+            <!-- search icom -->
+            <i class="ri-search-line search__icon"></i>
+
+            <!-- input bar -->
+            <input type="textarea" placeholder="What are you looking for?" class="search__input" id="output">
+
+            <!-- mic -->
+            <i class="ri-mic-fill" id="start-btn"></i>
+        </form>
+        <!-- Close button/icon -->
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!-- ======================= LOGIN ======================= -->
+    <div class="login grid" id="login-content">
+        <form action="" class="login__form grid">
+            <!-- Head -->
+            <h3 class="login__title">Log In</h3>
+
+            <!-- login box -->
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your email" class="login__input" id="login-email">
+                </div>
+
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" class="login__input" id="login-pass">
+                </div>
+
+            </div>
+
+            <!-- Signup / forgot -->
+            <div>
+                <span class="login__signup">
+                    YOu do not have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forgot">
+                    Forgot Password?
+                </a>
+
+                <!-- login button -->
+                <button type="submit" class="login__button button" id="login-button">Log In</button>
+            </div>
+        </form>
+
+        <!-- Close button -->
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!-- ======================= MAIN ======================= -->
+    <main class="main">
+        <!-- ======================= HOME ======================= -->
+        <section class="home section" id="home">
+            <!-- Home Container -->
+            <div class="home__container container grid">
+
+                <!-- Data -->
+                <div class="home__data">
+                    <!-- head title -->
+                    <h1 class="home__title">
+                        Browse &
+                        Select Books
+                    </h1>
+                    <!-- description -->
+                    <p class="home__description">
+                        Find your best e-books from your favorite writer, explore hundreds of books with all posibble
+                        categories, take advantage of the 50% discount and much more.
+                    </p>
+                    <!-- Button -->
+                    <button class="button">Explore Now</button>
+                </div>
+
+                <!-- Images of books -->
+                <div class="home__images">
+                    <!-- swiper -->
+                    <div class="home__swiper swiper">
+                        <!-- Books img -->
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="/img/home1.png" alt="images" class="home__img" height="680" width="984">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="img/featured.png" alt="images" class="home__img" height="680" width="984">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="img/home3.png" alt="images" class="home__img" height="680" width="984">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="img/featured5.png" alt="images" class="home__img" height="680" width="984">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Home section END -->
+
+        <!-- ======================= SERVICES ======================= -->
+        <section class="services section">
+            <div class="services__container conatainer grid">
+
+                <article class="services__card">
+
+                    <i class="ri-truck-line"></i>
+                    <h3 class="services__title">Free Shipping</h3>
+                    <p class="services__description">Order more than &#8377; 1000</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="services__title">Secure Payment</h3>
+                    <p class="services__description">100% Secure</p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="services__title">24/7 Support</h3>
+                    <p class="services__description">Call us anytime</p>
+                </article>
+            </div>
+        </section>
+        <!-- Service END -->
+
+        <!-- ======================= FEATURED ======================= -->
+        <section class="featured section" id="featured">    
+            <h2 class="section__title">
+                Featured Books
+            </h2>
+
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Classroom of the elite vol.1 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/home1.png" alt="imaage" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Classroom of the elite </h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;599</span>
+                                <span class="featured__price_cut">&#8377;1599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Bunny Girl Senpai❤️ -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured.png" alt="imaage" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Bunny Girl Senpai❤️</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- The Eminence in Shadow -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured1.png" alt="imaage" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Eminence in Shadow</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Solo Leveling vol.3 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured3.png" alt="imaage" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Solo Leveling <br> vol.3</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- It Ends With Us -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/home3.png" alt="imaage" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">It Ends With Us</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;250</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Atomic Habit -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured4.jpg" alt="image" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Atomic Habit</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;250</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Power -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/home4.png" alt="image" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Power - The 48 Laws of Power</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Oshi No Ko Vol.3 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured6.png" alt="image" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Oshi No Ko <br> Vol.3</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Cote 11.5 -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured7.png" alt="image" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">Classroom of the elite vol.11.5</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+
+                        <!-- Yov've reached Sam -->
+                        <article class="featured__card swiper-slide">
+                            <img src="img/featured5.png" alt="image" class="featured__img" height="984px" width="680">
+
+                            <h2 class="featured__title">You've Reached Sam</h2>
+                            <div class="featured__price">
+                                <span class="featured__discount">&#8377;299</span>
+                                <span class="featured__price_cut">&#8377;599</span>
+                            </div>
+
+                            <button class="button">Add to Cart</button>
+
+                            <div class="featured__actions">
+                                <button><i class="ri-search-2-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured END -->
+
+        <!-- ======================= DISCOUNT ======================= -->
+        <section class="discount section" id="discount">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Up To 50% Discount
+                    </h2>
+
+                    <p class="discount__description">
+                        Take advantage of the discount days we have for you, buy books from your favorite writters, the
+                        more you buy, the more discounts we have for you
+                    </p>
+
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+
+                <div class="discount__images">
+                    <img src="img/featured7.png" alt="image" class="discount__img-1">
+                    <img src="img/featured.png" alt="image" class="discount__img-2">
+                 </div>
+            </div>
+        </section>
+        <!-- Discount END -->
+
+        <!-- ======================= NEW BOOKS ======================= -->
+        <section class="section new" id="new">
+            <h2 class="section__title">
+                New Books
+            </h2>
+
+            <div class="new__container container">
+                <!-- Swiper 1 -->
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Mai-Sannnnn -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Bunny Girl Senpai</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377;699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- shadow -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured1.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">The Eminence in Shadow</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Solo leveling -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured3.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Solo Leveling</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Atomic Habits -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured4.jpg" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Atomic Habits</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- You've Reached Sam -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured5.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">You've Reached Sam</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- cote -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured7.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Classroom of the Elite</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377;699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Swiper 2 -->
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <!-- cote -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured7.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Classroom of thee Elite</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377;699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- You've Reached Sam -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured5.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">You've Reached Sam</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Atomic Habits -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured4.jpg" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Atomic Habits</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Solo leveling -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured3.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Solo Leveling</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- shadow -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured1.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">The Eminence in Shadow</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377; 699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Mai-Sannnnn -->
+                        <a href="#" class="new__card swiper-slide">
+                            <img src="img/featured.png" alt="image" class="new__img" height="680" width="984">
+
+                            <div>
+                                <h2 class="new__title">Bunny Girl Senpai</h2>
+                                <div class="new__prices">
+                                    <span class="new__discount">&#8377;699</span>
+                                    <span class="new__price">&#8377; 1999</span>
+                                </div>
+                                <div>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-fill new__star"></i>
+                                    <i class="ri-star-half-fill new__star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- ======================= JOIN ======================= -->
+        <section class="section join">
+            <div class="join__container">
+                <img src="img/join-bg.png" alt="img" class="join__bg">
+
+                <div class="join__data container grid">
+                    <h2 class="join__title section__title">
+                        Subscribe To Receive <br>
+                        The Latest Updates
+                    </h2>
+
+                    <form class="join__form">
+                        <input type="email" placeholder="Enter your Email" class="join__input">
+                        <button class="join__button button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= TESTIMONIAL    ======================== -->
+        <section class="section testimonial" id="testimonial">
+            <h2 class="section__title">
+                Customer Opinions
+            </h2>
+
+            <div class="testimonial__container container">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Brooooo -->
+                        <article class="testimonial__card swiper-slide">
+                            <img src="img/Yajvin.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Yajvin</h2>
+                            <p class="testimonial__description">
+                                OP Broo a literaly hevean of Book! good user experience on your ebook website  
+                            </p>
+
+                            <div class="testimonial__star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <!-- Eshwa bhai -->
+                        <article class="testimonial__card swiper-slide">
+                            <img src="img/Eshwa.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Eshwa</h2>
+                            <p class="testimonial__description">
+                                Shabash mere sher, well done...this webste is awesome you did well keep it up
+                            </p>
+
+                            <div class="testimonial__star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <!-- Aftab -->
+                        <article class="testimonial__card swiper-slide">
+
+                            <img src="img/Aftab.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title ">Aftab🦈</h2>
+                            <p class="testimonial__description">
+                                Yeahhhh Pankuu my Boiii, well done my Shark...this is the best e-book website...thank
+                                for discount
+                            </p>
+
+                            <div class="testimonial__star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <!-- Riya -->
+                        <article class="testimonial__card swiper-slide">
+                            <img src="img/Riya.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Riya</h2>
+                            <p class="testimonial__description">
+                                I'm virtual booklover and SP-book website have endless shelves, together we both are
+                                perfect!
+                            </p>
+
+                            <div class="testimonial__star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </article>
+
+                        <!-- Pranjal -->
+                        <article class="testimonial__card swiper-slide">
+
+                            <img src="img/Pranjal.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Pranjal</h2>
+                            <p class="testimonial__description">
+                                The Best website to buy books, the purchase is very easy to make and I love it 😍
+                            </p>
+
+                            <div class="testimonial__star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <!-- Nakul -->
+                        <article class="testimonial__card swiper-slide">
+                            <img src="img/Nakul.jpg" alt="image" class="testimonial__img">
+
+                            <h2 class="testimonial__title">Nakul</h2>
+                            <p class="testimonial__description">
+                                Awesome my Junior, I can get any book now thanks to you buddy...the best this do do
+                            </p>
+
+                            <div class="testimonial__star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="" class="footer__logo">
+                    <i class="ri-book-3-line"></i> SP-Book
+                </a>
+
+                <p class="footer__description">
+                    Find and explore the best <br>
+                    e-books from your <br>
+                    favorite writer.
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <!-- div about -->
+                <div>
+
+                    <h3 class="footer__title">About</h3>
+
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="" class="footer__li">Awards</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Privacy policy</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Terms of services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- div Company -->
+                <div>
+
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="" class="footer__li">Blogs</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Community</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Our team</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Help center</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- div Contact -->
+                <div>
+
+                    <h3 class="footer__title">Contact</h3>
+
+                    <ul class="footer__ul">
+                        <li>
+                            <address class="footer__info">Near shamsanghat, <br>Shaitan gully-69 </address>
+                        </li>
+
+                        <li>
+                            <address class="footer__info">
+                                <span class="size">sp.book026@gmial.com</span> <br> 8591230427
+                            </address>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- div Social -->
+                <div>
+                    <h3 class="footer__title">Social</h3>
+
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/pankaj___026/" target="_blank" class="footer__social-links">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/pankaj-gupta-288374243/" target="_blank"
+                            class="footer__social-links">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-links">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; All Right Reserved By SP
+        </span>
+    </footer>
+
+    <!-- ======================= SCROLL UP ======================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+    <!-- ======================= SCRIPT ======================= -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
